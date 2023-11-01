@@ -7,6 +7,7 @@ export  const recipeList = [
       imageURL:
         "https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80",
       createdBy: "Mariam Khan",
+      category:'main course'
     },
     {
       id: 2,
@@ -16,6 +17,7 @@ export  const recipeList = [
       imageURL:
         "https://plus.unsplash.com/premium_photo-1670895802097-c9749ab2dc5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHJlY2lwZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
       createdBy: "Mariam Khan",
+      category:'dessert'
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ export  const recipeList = [
       imageURL:
         "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJlY2lwZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
       createdBy: "Naila Ishrat",
+      category:'soup'
     },
     {
       id: 4,
@@ -34,6 +37,7 @@ export  const recipeList = [
       imageURL:
         "https://images.unsplash.com/photo-1485921325833-c519f76c4927?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHJlY2lwZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
       createdBy: "Mariam Khan",
+      category:'main course'
     },
     {
       id: 5,
@@ -43,6 +47,7 @@ export  const recipeList = [
       imageURL:
         "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
       createdBy: "Mariam Khan",
+      category:'breakfast'
     },
     {
       id: 6,
@@ -52,6 +57,7 @@ export  const recipeList = [
       imageURL:
         "https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
       createdBy: "Mariam Khan",
+      category:'dessert'
     },
   ];
   const produceList = [

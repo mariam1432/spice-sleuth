@@ -4,9 +4,11 @@ interface Interface {
   title: string;
   category: string;
   msg?: string;
-  ingredients: number;
+  ingredients?: number;
   liked?: boolean;
   id: number;
+  handleLike: () => void;
+  handleLink: () => void;
 }
 export default function RecipeCardWithDescription({
   title,
@@ -16,11 +18,16 @@ export default function RecipeCardWithDescription({
   category,
   msg,
   ingredients,
+  handleLike,
+  handleLink,
 }: Interface) {
-  const handleLike = () => console.log("heart", id);
+  // const handleLike = () => console.log("heart", id);
 
   return (
-    <div className="flex rounded-md bg-base-100 shadow-xl h-32  w-full md:w-auto">
+    <div
+      key={id}
+      className="flex rounded-md bg-base-100 shadow-xl h-32  w-full md:w-auto"
+    >
       <img
         src={imgURL}
         alt="Movie"
@@ -29,11 +36,11 @@ export default function RecipeCardWithDescription({
       <div className="p-2 w-2/3">
         <div className="flex justify-between">
           <h2 className="text-md">{title}</h2>
-          <div>
+          <div className="flex flex-row">
             <button className="text-lg text-red-600" onClick={handleLike}>
               {!liked ? <AiOutlineHeart /> : <AiFillHeart />}
             </button>
-            <button onClick={() => console.log(id)}>
+            <button onClick={handleLink}>
               <AiOutlineExport className="text-md" />
             </button>
           </div>
@@ -41,9 +48,11 @@ export default function RecipeCardWithDescription({
         <a className="text-red-400 text-800 text-md cursor-pointer">
           {category}
         </a>
-        <p className="text-xs text-slate-400">
-          You have all {ingredients} ingredients
-        </p>
+        {ingredients && ingredients > 0 ? (
+          <p className="text-xs text-slate-400">
+            You have all {ingredients} ingredients
+          </p>
+        ) : null}
         {msg ? <p className="text-xs text-red-500">{msg}</p> : null}
       </div>
     </div>

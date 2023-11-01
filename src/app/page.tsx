@@ -5,6 +5,7 @@ import RecipeByIngredients from "./pages/RecipeByIngredients";
 import Recipe from "./pages/Recipe";
 import { Footer, Navbar } from "./components";
 import RecipesByCategory from "./pages/RecipesByCategory";
+import ShoppingList from "./pages/ShoppingList";
 export default function ParentComponent() {
   return (
     <main>
@@ -12,8 +13,9 @@ export default function ParentComponent() {
       <section className="p-10 py-24">
         {/* <Home/> */}
         {/* <Recipe /> */}
-        <RecipesByCategory/>
+        {/* <RecipesByCategory/> */}
         {/* <RecipeByIngredients /> */}
+        <ShoppingList/>
       </section>
 
       <Footer />
